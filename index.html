@@ -8,7 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 				<p><img src="images/top.png" title=""></p>
 			</div>
 			<div class="grid">
-				<a target="_blank" href="fb://profile/100087224885915">
+				<a id="SocialLink" target="_blank" href="fb://profile/100087224885915">
 					<img src="images/logo_light.png" title="شركة التعمير لخدمات الصيانة للإسكان الإجتماعى ودار مصر">
 
 					<h2>رجاء من السادة مديري المواقع ارسال طلب صداقة لحساب الفيس بوك الخاص بالشركة وللذهاب الى حساب
@@ -35,16 +35,16 @@
 			<div class="clear"></div>
 			<div class="footer">
 				<p>Copyright 2022&nbsp Template by Mohamed Rayan</p>
-			
-				<p><a target="_blank" href="fb://profile/100001251567827"><i class="fa-brands fa-facebook"></i></a>
-				
-				<a target="_blank" href="https://github.com/Mohamed-Rayan-iti"><i
+
+				<p><a id="MySocialLink" target="_blank" href="fb://profile/100001251567827"><i class="fa-brands fa-facebook"></i></a>
+
+					<a target="_blank" href="https://github.com/Mohamed-Rayan-iti"><i
 							class="fa-brands fa-github"></i></a>
-				
-				<a target="_blank" href="https://stackoverflow.com/users/13034944/mohamed-rayan"><i
+
+					<a target="_blank" href="https://stackoverflow.com/users/13034944/mohamed-rayan"><i
 							class="fa-brands fa-stack-overflow"></i></a>
-				
-				<a target="_blank" href="https://www.linkedin.com/in/mohamed-rayan-iti/"><i
+
+					<a target="_blank" href="https://www.linkedin.com/in/mohamed-rayan-iti/"><i
 							class="fa-brands fa-linkedin-in"></i></a>
 				</p>
 			</div>
@@ -54,7 +54,16 @@
 	<div class="clear"></div>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" crossorigin="anonymous"
-	referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" crossorigin="anonymous"></script>
+
+<script>
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		document.getElementById("SocialLink").href = "fb://profile/100087224885915";
+		document.getElementById("MySocialLink").href = "fb://profile/100001251567827";
+	} else {
+		document.getElementById("SocialLink").href = "https://www.facebook.com/100087224885915";
+		document.getElementById("MySocialLink").href = "https://www.facebook.com/100001251567827";
+	}
+</script>
 
 </html>
