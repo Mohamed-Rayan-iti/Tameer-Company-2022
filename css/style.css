@@ -1,0 +1,382 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* start editing from here */
+a {
+  text-decoration: none;
+}
+.txt-rt {
+  text-align: right;
+} /* text align right */
+.txt-lt {
+  text-align: left;
+} /* text align left */
+.txt-center {
+  text-align: center;
+} /* text align center */
+.float-rt {
+  float: right;
+} /* float right */
+.float-lt {
+  float: left;
+} /* float left */
+.clear {
+  clear: both;
+} /* clear float */
+.pos-relative {
+  position: relative;
+} /* Position Relative */
+.pos-absolute {
+  position: absolute;
+} /* Position Absolute */
+.vertical-base {
+  vertical-align: baseline;
+} /* vertical align baseline */
+.vertical-top {
+  vertical-align: top;
+} /* vertical align top */
+.underline {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  margin: 0 0 20px 0;
+} /* Add 5px bottom padding and a underline */
+nav.vertical ul li {
+  display: block;
+} /* vertical menu */
+nav.horizontal ul li {
+  display: inline-block;
+} /* horizontal menu */
+img {
+  max-width: 100%;
+}
+/*end reset*/
+body {
+  background: url(../images/bg.png) no-repeat #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: "Open Sans", arial, sans-serif;
+  font-weight: 300;
+}
+.wrap {
+  width: 80%;
+  margin: 0px auto;
+}
+.content {
+  min-height: 46em;
+}
+.content-grid {
+  text-align: center;
+}
+
+.content-grid img {
+  text-align: center;
+  z-index: -9999;
+  margin-top: -7em;
+}
+.grid {
+  text-align: center;
+  margin-top: 1em;
+}
+.grid h2 {
+  font-family: "Petit Formal Script", cursive;
+  color: #fff;
+  display: block;
+  padding-bottom: 2.5em;
+  font-size: 1.6em;
+  padding-top: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+.grid h3 {
+  font-family: "Petit Formal Script", cursive;
+  color: #fff;
+  display: block;
+  padding-bottom: 2.5em;
+  font-size: 1.5em;
+  padding-top: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+.footer {
+  margin-top: 50px;
+}
+.footer p {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(253, 254, 255);
+  display: block;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.8em;
+  text-align: center;
+  margin-top: 1em;
+  text-shadow: 0px 1px 0px rgba(255, 250, 250, 0.09);
+}
+
+.footer p a {
+	font-size: 35px;
+	margin-right: .5em;
+	margin-left: .5em;
+  color: #fbfbfb;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.footer p a:hover {
+  color: #17954c;
+}
+/*-----start-responsive-design------*/
+@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+  .wrap {
+    width: 95%;
+  }
+  .footer p a {
+	font-size: 35px;
+}
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .wrap {
+    width: 95%;
+  }
+  .footer p a {
+	font-size: 45px;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .wrap {
+    width: 95%;
+  }
+  .grid h2 {
+    padding-top: 1.2em;
+    padding-bottom: 2em;
+  }
+  .grid h3 {
+    padding-top: 1.2em;
+    padding-bottom: 2em;
+  }
+  
+  .content-grid img {
+    margin-top: -6em;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  .wrap {
+    width: 95%;
+  }
+  .content-grid p {
+    margin-top: 3em;
+  }
+  .grid img {
+    width: 90%;
+    margin-top: 1em;
+  }
+  .grid h2 {
+    font-size: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+  }
+  .grid h3 {
+    font-size: 0.9em;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+  }
+  .btn {
+    padding: 25px 25px;
+    margin-left: -61px;
+    margin-top: 2.8px;
+  }
+  .footer p {
+    margin-bottom: 1em;
+  }
+  .footer p a {
+	font-size: 50px;
+}
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .wrap {
+    width: 95%;
+  }
+  .content-grid img {
+    margin-top: -2em;
+    width: 300px;
+    text-align: center;
+  }
+  .content-grid {
+    text-align: center;
+    margin: 0px auto;
+  }
+  .grid {
+    margin-top: 0em;
+  }
+  .grid img {
+    width: 283px;
+    margin-top: 0.3em;
+  }
+  .grid h2 {
+    font-size: 0.9em;
+    padding-top: 1.2em;
+    padding-bottom: 1.7em;
+  }
+  .grid h3 {
+    font-size: 0.8em;
+    padding-top: 1.2em;
+    padding-bottom: 1.7em;
+  }
+
+  .footer p {
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+  }
+}
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  .grid img {
+    width: 100%;
+    margin-top: 0em;
+  }
+
+  .content-grid p {
+    margin-top: 1em;
+  }
+
+  .grid h2 {
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1.4em;
+  }
+  .grid h3 {
+    font-size: 0.9em;
+    padding-top: 1em;
+    padding-bottom: 1.4em;
+  }
+  .footer p {
+    margin-bottom: 1em;
+  }
+  .wrap {
+    width: 95%;
+  }
+
+  .footer p a {
+	font-size: 70px;
+}
+}
